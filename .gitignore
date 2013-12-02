@@ -42,9 +42,13 @@ build/
 *.vspscc
 *.vssscc
 .builds
+*.lastbuildstate
+*.idb
 *.pidb
 *.log
+*.tlog
 *.scc
+*.exe
 
 # Visual C++ cache files
 ipch/
