@@ -20,7 +20,10 @@ int main(int argc, char** argv)
    return RUN_ALL_TESTS();
 }
 
-TEST( SoundexEncoding, retain_Sole_Letter_Of_One_Letter_Word)
+TEST( SoundexEncoding, retains_Sole_Letter_Of_One_Letter_Word)
 {
-    soundex::Soundex;
+    soundex::Soundex soundex_;
+    auto encoded = soundex_.encode("A");
+
+    ASSERT_THAT(encoded, testing::Eq("A"));
 }

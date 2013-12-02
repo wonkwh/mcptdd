@@ -8,14 +8,18 @@
 #ifndef _SOUNDEX_H_
 #define _SOUNDEX_H_
 
+#include <string>
+
 namespace soundex
 {
 
 class Soundex
 {
 public:
-    Soundex(void);
-    virtual ~Soundex(void);
+    std::string encode(const std::string& word) const 
+    {
+        return "A";
+    }
 };
 
 } //namespace soundex

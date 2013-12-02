@@ -10,14 +10,11 @@
 namespace soundex
 {
 
-Soundex::Soundex(void)
+#if 0
+std::string Soundex::encode(const std::string& word) const
 {
+    return "A";
 }
-
-
-Soundex::~Soundex(void)
-{
-}
-
+#endif
 } //namespace soundex
 
